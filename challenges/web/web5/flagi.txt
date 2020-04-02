@@ -1,0 +1,4 @@
+haha well done, i guess js isnt so secure right ? :P
+
+
+EVILPWNCTF{n3v3r_us3_js_f0r_l0g1n}
