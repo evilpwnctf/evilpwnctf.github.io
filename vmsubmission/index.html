@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EvilPWN CTF - Official</title>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #00ff18;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+html {
+  background: url(bg2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="sitelogo.png" style="width:200px;height:200px;">
+  <a href="../index.html"><i class="fas fa-home fa-sm faa-pulse animated-hover"></i> Home</a>
+  <a href="index.html"><i class="fas fa-flag fa-sm faa-pulse animated-hover"></i> Challenges</a>
+  <a href="../vms/index.html"><i class="fas fa-desktop fa-sm faa-pulse animated-hover "></i> Vulnerable VMs</a>
+  <a href="../vms/index.html"><i class="fas fa-pen-alt fa-sm faa-pulse animated-hover "></i> VM Submission</a>
+  <a href="../rules/index.html"><i class="fas fa-shield-alt fa-sm faa-pulse animated-hover"></i> Rules</a>
+  <a href="https://discord.gg/TED8JGA" target="_blank"><i class="fab fa-discord fa-sm faa-pulse animated-hover"></i> Join Discord</a>
+</div>
+
+<div class="main">
+<style type="text/css">
+.tftable {font-size:12px;color:#fbfbfb;width:100%;border-width: 1px;border-color: #686767;border-collapse: collapse; text-align:center; margin-left:auto;margin-right:auto;}
+.tftable th {font-size:13px;background-color:#171515;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:center; margin-left:auto;margin-right:auto;}
+.tftable tr {background-color:#2f2f2f;}
+.tftable td {font-size:13px;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767; margin-left:auto;margin-right:auto;}
+.tftable tr:hover {background-color:#171515;}
+</style>
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+  #text{
+      font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
+html {
+  background: url(bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<div id="text">
+<style type="text/css">
+.tftable2 {font-size:12px;color:#fbfbfb;width:60%;border-width: 1px;border-color: #686767;border-collapse: collapse; text-align:center; margin-left:auto;margin-right:auto;}
+.tftable2 th {font-size:13px;background-color:#171515;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:center; margin-left:auto;margin-right:auto;}
+.tftable2 tr {background-color:#2f2f2f;}
+.tftable2 td {font-size:13px;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767; margin-left:auto;margin-right:auto;}
+.tftable2 tr:hover {background-color:#171515;}
+</style>
+
+<br><br>
+<br>
+
+<table class="tftable2" border="1">
+<font color="white"><center><h2>VM Submission</h2></center></font>
+<font color="white"><center><h4>Send an email to evilpwnctf@protonmail.com with the following content :</h4></center></font>
+<tr><th><i class="fas fa-pen-alt"></i> VM Submission</th></tr>
+<tr><td>1. VM Name</td></tr>
+<tr><td>2. Difficulty	(Very Easy / Easy / Medium / Medium-Hard / Hard / Insane)</td></tr>
+<tr><td>3. Maker(s) Username(s)</td></tr>
+<tr><td>4. OS (Linux / Windows etc)</td></tr>
+<tr><td>5. VM Size</td></tr>
+<tr><td>6. Platform (We suggest you to use VMware, but VirtualBox is acceptable too)</td></tr>
+<tr><td>7. Writeup of the box (any format .txt/.pdf etc)</td></tr>
+<tr><td>8. Download Link</td></tr>
+</table>
+
+<br><br>
+<br><br>
+
+<table class="tftable2" border="1">
+<font color="white"><center><h2>VM MUST Properties</h2></center></font>
+<tr><th><i class="fas fa-pen-alt"></i> VM Submission</th></tr>
+<tr><td>1. Flag under /root/root.txt</td></tr>
+<tr><td>2. Flag Format EVILPWNCTF{sha256_string}</td></tr>
+<tr><td>3. IP address under /etc/issue, you can use this \4{eth0} or \4{ens33}</td></tr>
+</table>
+
+<br><br>
+
+<font color="white"><center><h4>VM Makers will receive @[VM Maker] role on EvilPWN CTF Server.</h4></center></font>
+
+</body>
+</html>
